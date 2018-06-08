@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.subbusdevops.jun2018.org</groupId>
+  <artifactId>trucks</artifactId>
+  <packaging>war</packaging>
+  <version>2.0</version>
+  <name>trucks Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>trucks</finalName>
+  </build>
+	<distributionManagement>
+		<repository>
+			<id>jfrog</id>  <!-- must match this -->
+			<name>192.168.193.223-releases</name>
+			<url>http://192.168.193.224:8081/artifactory/my-maven-repo</url>
+		</repository>
+		<snapshotRepository>
+			<id>jfrog</id>
+			<name>192.168.193.223-snapshots</name>
+			<url>http://192.168.193.224:8081/artifactory/my-maven-repo</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
