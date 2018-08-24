@@ -22,12 +22,12 @@
 		<repository>
 			<id>jfrog</id>  <!-- must match this -->
 			<name>192.168.193.223-releases</name>
-			<url>http://192.168.193.224:8081/artifactory/my-maven-repo</url>
+			<url>http://localhost:8085/nexus-2.11.4-01/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>jfrog</id>
 			<name>192.168.193.223-snapshots</name>
-			<url>http://192.168.193.224:8081/artifactory/my-maven-repo</url>
+			<url>http://localhost:8085/nexus-2.11.4-01/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
